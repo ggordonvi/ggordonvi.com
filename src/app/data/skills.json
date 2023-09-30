@@ -1,0 +1,47 @@
+[
+    {
+        "name": "AngularJS",
+        "type": "Technical",
+        "proficiency": "Expert"
+    },
+    {
+        "name": "Angular2+",
+        "type": "Technical",
+        "proficiency": "Expert"
+    },
+    {
+        "name": "AWS",
+        "type": "Technical",
+        "proficiency": "Experienced"
+    },
+    {
+        "name": "Jenkins",
+        "type": "Technical",
+        "proficiency": "Experienced"
+    },
+    {
+        "name": "TypeScript",
+        "type": "Technical",
+        "proficiency": "Experienced"
+    },
+    {
+        "name": "JavaScript",
+        "type": "Technical",
+        "proficiency": "Experienced"
+    },
+    {
+        "name": "Java",
+        "type": "Technical",
+        "proficiency": "Expert"
+    },
+    {
+        "name": "HTML",
+        "type": "Technical",
+        "proficiency": "Expert"
+    },
+    {
+        "name": "CSS",
+        "type": "Technical",
+        "proficiency": "Expert"
+    }   
+]

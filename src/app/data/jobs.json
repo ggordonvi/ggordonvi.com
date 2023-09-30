@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Capgemini",
+        "startDate": "02/01/2020",
+        "endDate": "",
+        "roles": [
+            {
+                "name": "Software Engineer Consultant",
+                "startDate": "02/01/2020",
+                "endDate": "12/01/2021",
+                "description": "Auto Insurance Client - Year 1 & 2",
+                "bulletPoints": [
+                    "Fulfilled 63 successful production deployments.",
+                    "Implemented 43+ enhancement projects.",
+                    "Resolved or fixed 120+ production problems.",
+                    "Expanded working knowledge to 7+ applications and services that extended languages or frameworks like AngularJS, Java, Spring and Spring Boot.",
+                    "Gained extensive domain knowledge of systems and applications, earning the reputation as the go-to expert for servicing and quoting side of business.",
+                    "Led an effort to fix data integrity issues across multiple systems significantly reducing agent and customer complications.",
+                    "Assisted with the successful delivery of a transformational project building out new policy servicing platforms for both the agent and customer.",
+                    "Strengthened client relationship by establishing trust and confidence through exceptional performance in an area we previously had no involvement in."
+                ]
+            },
+            {
+                "name": "Senior Software Engineer Consultant",
+                "startDate": "01/01/2022",
+                "endDate": "",
+                "description": "Auto Insurance Client - Year 3",
+                "bulletPoints": [
+                    "Fulfilled 49 successful production deployments.",
+                    "Implemented 21+ enhancement projects.",
+                    "Resolved or fixed 268+ production problems.",
+                    "Expanded working knowledge to 18+ applications and services that extended languages or frameworks like AngularJS, Java, Spring and Spring Boot.",
+                    "Assisted with the acquisition of a $56 million, 5 year contract bringing on 50+ additional developers to work across 56 client-owned applications.",
+                    "Managed a team of 11 offshore developers and business system analysts to maintain and enhance a portfolio of 22 client-owned applications.",
+                    "Played a key role in the successful rollout of a commercial line of business into our new servicing platforms by managing a small offshore team of 2 developers and contributing to the transformational project."                    ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="offset-sm-3 col-sm-6">
+        <form (ngSubmit)="onSubmit()" #alertForm="ngForm">
+            <label for="message" class="form-label">Alert Message</label>
+            <input type="text" class="form-control" id="message" required
+                [(ngModel)]="alert.message" name="message" #message="ngModel">
+            <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
+                Message is required!
+            </div>
+    
+            <label for="type" class="form-label mt-2">Alert Type</label>
+            <select class="form-select" id="type" required [(ngModel)]="alert.type" name="type" #type="ngModel">
+                <option value="INFO" selected>Info</option>
+                <option value="WARN">Warn</option>
+                <option value="ERROR">Error</option>
+            </select>
+            <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
+                Alert Type is required!
+            </div>
+        
+            <!-- <button type="submit" class="btn btn-success" [disabled]="!alertForm.form.valid">Submit</button> -->
+            <button type="button" class="btn btn-success mt-4" [disabled]="!alertForm.form.valid" (click)="addAlert(); alertForm.reset()">Add Alert</button>
+        </form>
+    </div>
+</div>
