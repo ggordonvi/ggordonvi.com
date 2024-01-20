@@ -17,10 +17,9 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'us-east-1'
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
         #SOURCE_DIR: 'deploy'      # optional: defaults to entire repository
 
     - name: Checkout Code
@@ -38,4 +37,4 @@ jobs:
       run: npm run build:prod
 
     - name: Deploy Application
-      run: aws s3 sync ./dist/ggordonvi s3://ggordonvi
+      run: aws s3 sync ./dist/ggordonvi s3://ggordonvi.com
