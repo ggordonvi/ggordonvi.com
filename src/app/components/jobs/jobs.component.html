@@ -1,30 +1,26 @@
-<div class="row">
-    <div class="tile">
-        <h1 class="tile-title">EXPERIENCE</h1>
-        <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
-            <div class="tile-body">
-                <div *ngFor="let job of jobService.jobs">
-                    <h4 class="mb-0">{{ job.name }}</h4>
-                    <p>{{ job.startDate | date:'MMM yyyy' }}
-                        <span *ngIf="job.endDate == undefined"> to Current</span>
-                        <span *ngIf="job.endDate != undefined"> to {{ job.endDate | date:'MMM yyyy' }}</span>
-                        <span *ngIf="job.length"> - {{ job.length }}</span>
-                    </p>
-                    <div *ngFor="let role of job.roles" style="margin-left: 10px;">
-                        <h5 class="mb-0">{{ role.name }}</h5>
-                        <p>{{ role.startDate | date:'MMM yyyy' }}
-                            <span *ngIf="role.endDate == undefined"> to Current</span>
-                            <span *ngIf="role.endDate != undefined"> to {{ role.endDate | date:'MMM yyyy' }}</span>
-                            <span *ngIf="role.length"> - {{ role.length }}</span>
-                        </p>
-                        <p>{{ role.description }}</p>
-                        <ul>
-                            <div *ngFor="let bullet of role.bulletPoints">
-                                <li>{{ bullet }}</li>
-                            </div>
-                        </ul>
+
+<div class="col-sm-12 col-md-12">
+    <div class="tile-body">
+        <div *ngFor="let job of jobService.jobs">
+            <h4 class="mb-0">{{ job.name }}</h4>
+            <p>{{ job.startDate | date:'MMM yyyy' }}
+                <span *ngIf="job.endDate == undefined"> to Current</span>
+                <span *ngIf="job.endDate != undefined"> to {{ job.endDate | date:'MMM yyyy' }}</span>
+                <span *ngIf="job.length"> - {{ job.length }}</span>
+            </p>
+            <div *ngFor="let role of job.roles" style="margin-left: 10px;">
+                <h5 class="mb-0">{{ role.name }}</h5>
+                <p>{{ role.startDate | date:'MMM yyyy' }}
+                    <span *ngIf="role.endDate == undefined"> to Current</span>
+                    <span *ngIf="role.endDate != undefined"> to {{ role.endDate | date:'MMM yyyy' }}</span>
+                    <span *ngIf="role.length"> - {{ role.length }}</span>
+                </p>
+                <p>{{ role.description }}</p>
+                <ul>
+                    <div *ngFor="let bullet of role.bulletPoints">
+                        <li>{{ bullet }}</li>
                     </div>
-                </div>
+                </ul>
             </div>
         </div>
     </div>

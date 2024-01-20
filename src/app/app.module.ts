@@ -13,6 +13,9 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { BannerComponent } from './components/banner/banner.component';
     JobsComponent,
     IntroComponent,
     SkillsComponent,
-    BannerComponent
+    BannerComponent,
+    SidebarComponent,
+    ProfileComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
