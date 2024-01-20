@@ -4,12 +4,9 @@ on:
   push:
     branches:
     - main
-    #paths:
-    #- dist/ggordonvi/**
 
 jobs:
   deploy:
-  #build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -20,7 +17,6 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
-        #SOURCE_DIR: 'deploy'      # optional: defaults to entire repository
 
     - name: Checkout Code
       uses: actions/checkout@v2
