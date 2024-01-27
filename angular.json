@@ -53,31 +53,24 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/assets/css/theme.css",
-              "src/assets/fonts/css/animations.css",
+              "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
+              "./node_modules/swiper/swiper-bundle.min.css",
+              "./node_modules/simplebar/dist/simplebar.min.css",
+              "./node_modules/scrollcue/scrollCue.css",
               "src/assets/fonts/css/boxicons.css",
-              "src/assets/fonts/css/transformations.css"
+              "src/assets/css/theme.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/js/main.js",
-              "src/assets/js/vendors/cleave-function.js",
               "src/assets/js/vendors/color-modes.js",
-              "src/assets/js/vendors/filter-gallery.js",
-              "src/assets/js/vendors/glight.js",
-              "src/assets/js/vendors/jarallax.js",
+              "./node_modules/simplebar/dist/simplebar.min.js",
+              "./node_modules/headhesive/dist/headhesive.min.js",
+              "src/assets/js/main.js",
               "src/assets/js/vendors/offcanvas.js",
-              "src/assets/js/vendors/parallax.js",
-              "src/assets/js/vendors/password.js",
-              "src/assets/js/vendors/plyr.js",
-              "src/assets/js/vendors/pricing.js",
-              "src/assets/js/vendors/rellax.js",
-              "src/assets/js/vendors/scrollcue.js",
-              "src/assets/js/vendors/sidebar-menu.js",
-              "src/assets/js/vendors/sidenav.js",
+              "./node_modules/swiper/swiper-bundle.min.js",
               "src/assets/js/vendors/swiper.js",
-              "src/assets/js/vendors/tab-to-dropdown.js"
+              "./node_modules/scrollcue/scrollCue.min.js",
+              "src/assets/js/vendors/scrollcue.js"
             ]
           },
           "configurations": {
@@ -85,8 +78,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "4mb"
                 },
                 {
                   "type": "anyComponentStyle",
