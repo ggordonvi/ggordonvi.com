@@ -6,11 +6,11 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { WipComponent } from './pages/wip/wip.component';
 
 const routes: Routes = [
-  { path: '', component: WipComponent },
+  { path: 'wip', component: WipComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home', pathMatch: 'full' }
+  { path: '',   redirectTo: '/profile', pathMatch: 'full' },
+  { path: '**', redirectTo: 'profile', pathMatch: 'full' }
 ];
 
 @NgModule({
