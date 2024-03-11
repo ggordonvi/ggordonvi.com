@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Skill } from '../objects/skill';
+import { Skill } from '../models/skill';
 
 import SKILL_DATA from '../data/skills.json';
 

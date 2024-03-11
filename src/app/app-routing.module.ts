@@ -8,8 +8,8 @@ import { SkillsComponent } from './pages/skills/skills.component';
 
 const routes: Routes = [
   { path: 'wip', component: WipComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'projects', component: ProjectsComponent },
+  { path: 'profile/skills', component: SkillsComponent },
+  { path: 'profile/projects', component: ProjectsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: '',   redirectTo: '/profile', pathMatch: 'full' },
   { path: '**', redirectTo: 'profile', pathMatch: 'full' }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { Job } from '../objects/job';
-import { Role } from '../objects/role';
+import { Job } from '../models/job';
+import { Role } from '../models/role';
 
 import WORK_HISTORY_DATA from '../data/jobs.json';
 
