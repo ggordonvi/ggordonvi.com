@@ -1,15 +1,20 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 import { Skill } from '../models/skill';
-
-import SKILL_DATA from '../data/skills.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillService {
 
-  skills: Skill[] = SKILL_DATA;
+  private skillsJsonData = 'assets/data/skills.json';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getSkillData(): Observable<Skill[]> {
+    return this.http.get<Skill[]>(this.skillsJsonData);
+  }
 }

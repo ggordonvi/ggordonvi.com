@@ -1,38 +1,29 @@
 [
-    {
+        {
         "name": "Capgemini",
-        "startDate": "02/01/2020",
-        "endDate": "",
+        "startDate": "2020-02-01",
+        "endDate": null,
         "roles": [
             {
-                "name": "Software Engineer Consultant",
-                "startDate": "02/01/2020",
-                "endDate": "12/01/2021",
-                "description": "Auto Insurance Client - Year 1 & 2",
+                "name": "Senior Software Engineer",
+                "startDate": null,
+                "endDate": null,
+                "description": "",
                 "bulletPoints": [
-                    "Fulfilled 63 successful production deployments.",
-                    "Implemented 43+ enhancement projects.",
-                    "Resolved or fixed 120+ production problems.",
-                    "Expanded working knowledge to 7+ applications and services that extended languages or frameworks like AngularJS, Java, Spring and Spring Boot.",
-                    "Gained extensive domain knowledge of systems and applications, earning the reputation as the go-to expert for servicing and quoting side of business.",
-                    "Led an effort to fix data integrity issues across multiple systems significantly reducing agent and customer complications.",
-                    "Assisted with the successful delivery of a transformational project building out new policy servicing platforms for both the agent and customer.",
-                    "Strengthened client relationship by establishing trust and confidence through exceptional performance in an area we previously had no involvement in."
+                    "Expanded working knowledge to 27+ applications primarily Java based becoming the Subject Matter Expert (SME) for 15 of those applications.",
+                    "Contributed to the seamless transition from legacy systems to Guidewire, with a primary emphasis on developing and enhancing Digital Portals catering to agents and customers across both Personal Auto and Commercial Auto.",
+                    "Led and managed a team of offshore developers and business system analysts to maintain and enhance a portfolio of 37 client-owned applications.",
+                    "Acted as Scrum Master for multiple teams while leveraging Agile principles and utilizing JIRA, including both Kanban and Scrum boards, to facilitate seamless collaboration and task management, thereby driving project success.",
+                    "Collaborated extensively with business stakeholders and architects to design complex multi-system solutions, ensuring alignment with business goals and technical requirements.",
+                    "Analyzed production trend data to detect and address systemic issues spanning a diverse array of applications, facilitating proactive identification and mitigation of emerging trends.",
+                    "Implemented a standardized release management process adopted company-wide, ensuring streamlined coordination among development teams and transparent communication to stakeholders about production deployments."
+                ],
+                "keyMetrics": [
+                    { "metric": "Production Deployments", "value": "111+" },
+                    { "metric": "Enhancement Projects", "value": "81+" },
+                    { "metric": "Fixes Implemented", "value": "329+" },
+                    { "metric": "Applications Mastered", "value": "23" }
                 ]
-            },
-            {
-                "name": "Senior Software Engineer Consultant",
-                "startDate": "01/01/2022",
-                "endDate": "",
-                "description": "Auto Insurance Client - Year 3",
-                "bulletPoints": [
-                    "Fulfilled 49 successful production deployments.",
-                    "Implemented 21+ enhancement projects.",
-                    "Resolved or fixed 268+ production problems.",
-                    "Expanded working knowledge to 18+ applications and services that extended languages or frameworks like AngularJS, Java, Spring and Spring Boot.",
-                    "Assisted with the acquisition of a $56 million, 5 year contract bringing on 50+ additional developers to work across 56 client-owned applications.",
-                    "Managed a team of 11 offshore developers and business system analysts to maintain and enhance a portfolio of 22 client-owned applications.",
-                    "Played a key role in the successful rollout of a commercial line of business into our new servicing platforms by managing a small offshore team of 2 developers and contributing to the transformational project."                    ]
             }
         ]
     }

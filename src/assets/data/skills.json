@@ -1,47 +1,371 @@
 [
     {
         "name": "AngularJS",
-        "type": "Technical",
-        "proficiency": "Expert"
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Framework",
+        "yearsExp": 2,
+        "proficiency": 4,
+        "imageUrl": ""
     },
     {
-        "name": "Angular2+",
-        "type": "Technical",
-        "proficiency": "Expert"
-    },
-    {
-        "name": "AWS",
-        "type": "Technical",
-        "proficiency": "Experienced"
-    },
-    {
-        "name": "Jenkins",
-        "type": "Technical",
-        "proficiency": "Experienced"
-    },
-    {
-        "name": "TypeScript",
-        "type": "Technical",
-        "proficiency": "Experienced"
-    },
-    {
-        "name": "JavaScript",
-        "type": "Technical",
-        "proficiency": "Experienced"
-    },
-    {
-        "name": "Java",
-        "type": "Technical",
-        "proficiency": "Expert"
+        "name": "Angular",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Framework",
+        "yearsExp": 6,
+        "proficiency": 4,
+        "imageUrl": ""
     },
     {
         "name": "HTML",
-        "type": "Technical",
-        "proficiency": "Expert"
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 8,
+        "proficiency": 5,
+        "imageUrl": ""
     },
     {
         "name": "CSS",
-        "type": "Technical",
-        "proficiency": "Expert"
-    }   
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 8,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "SCSS",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 6,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "SASS",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "JavaScript",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 6,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "TypeScript",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 6,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "Java",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 8,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "Spring Boot",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Framework",
+        "yearsExp": 4,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "SQL",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 3,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "PostgreSQL",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Gosu",
+        "description": "",
+        "type": "Languages & Frameworks",
+        "subType": "Language",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Amazon Web Services - RC2",
+        "description": "",
+        "type": "Cloud Technologies",
+        "subType": "Cloud",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Amazon Web Services - S3",
+        "description": "",
+        "type": "Cloud Technologies",
+        "subType": "Cloud",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Amazon Web Services - Elastic Beanstalk",
+        "description": "",
+        "type": "Cloud Technologies",
+        "subType": "Cloud",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Amazon Web Services - EKS",
+        "description": "",
+        "type": "Cloud Technologies",
+        "subType": "Cloud",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Amazon Web Services - RDS",
+        "description": "",
+        "type": "Cloud Technologies",
+        "subType": "Cloud",
+        "yearsExp": 2,
+        "proficiency": 2,
+        "imageUrl": ""
+    },
+    {
+        "name": "AppDynamics",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Reporting",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Grafana",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Reporting",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Orion",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Reporting",
+        "yearsExp": 1,
+        "proficiency": 2,
+        "imageUrl": ""
+    },
+    {
+        "name": "Splunk",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Reporting",
+        "yearsExp": 4,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "SoapUI",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Testing",
+        "yearsExp": 3,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Postman",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Testing",
+        "yearsExp": 3,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "JUnit",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Testing",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Selenium",
+        "description": "",
+        "type": "Testing & Reporting",
+        "subType": "Testing",
+        "yearsExp": 2,
+        "proficiency": 2,
+        "imageUrl": ""
+    },
+    {
+        "name": "Jenkins",
+        "description": "",
+        "type": "Tools",
+        "subType": "CI/CD",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Maven",
+        "description": "",
+        "type": "Tools",
+        "subType": "Build Tools",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Node.js",
+        "description": "",
+        "type": "Tools",
+        "subType": "Build Tools",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "Node Package Manager",
+        "description": "",
+        "type": "Tools",
+        "subType": "Build Tools",
+        "yearsExp": 4,
+        "proficiency": 3,
+        "imageUrl": ""
+    },
+    {
+        "name": "ServiceNow",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 4,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "JIRA",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 4,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "Confluence",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 4,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "Git",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 4,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "GitHub",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 4,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "GitLab",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 4,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "IntelliJ",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 6,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "Eclipse",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 6,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "Visual Studio Code",
+        "description": "",
+        "type": "Tools",
+        "subType": "",
+        "yearsExp": 6,
+        "proficiency": 5,
+        "imageUrl": ""
+    },
+    {
+        "name": "DBeaver",
+        "description": "",
+        "type": "Tools",
+        "subType": "Database Manager",
+        "yearsExp": 3,
+        "proficiency": 4,
+        "imageUrl": ""
+    },
+    {
+        "name": "SMSS",
+        "description": "",
+        "type": "Tools",
+        "subType": "Database Manager",
+        "yearsExp": 2,
+        "proficiency": 3,
+        "imageUrl": ""
+    }
 ]

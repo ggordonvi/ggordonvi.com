@@ -1,0 +1,39 @@
+.proficiency {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 15px; /* Adjust size of circles */
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--bs-light); /* Border color of circles */
+    margin-right: 6px; /* Adjust spacing between circles */
+}
+
+.filled {
+    background-color: var(--bs-primary); /* Color of filled circles */
+}
+
+.skill-table thead tr {
+    height: 25px;
+    vertical-align: middle;
+}
+.skill-table tr {
+    height: 100px;
+    vertical-align: middle;
+}
+.skill-table tr td {
+    width:33%;
+    text-align: center;
+}
+.skill-table tr th {
+    width:33%;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .skill-table .hide-mobile {
+        display: none;
+    }
+}

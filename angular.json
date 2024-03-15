@@ -56,7 +56,7 @@
               "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
               "./node_modules/swiper/swiper-bundle.min.css",
               "./node_modules/simplebar/dist/simplebar.min.css",
-              "./node_modules/scrollcue/scrollCue.css",
+              "./node_modules/aos/dist/aos.css",
               "src/assets/fonts/css/boxicons.css",
               "src/assets/css/theme.css"
             ],
@@ -69,8 +69,7 @@
               "src/assets/js/vendors/offcanvas.js",
               "./node_modules/swiper/swiper-bundle.min.js",
               "src/assets/js/vendors/swiper.js",
-              "./node_modules/scrollcue/scrollCue.min.js",
-              "src/assets/js/vendors/scrollcue.js"
+              "./node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {

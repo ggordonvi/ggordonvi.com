@@ -1,131 +1,68 @@
 <main>
     <div class="pattern-square"></div>
 
-    <!-- <section class="py-5 py-lg-8">
+    <div class="py-xl-9 py-6">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb fw-medium">
-                            <li class="breadcrumb-item"><a routerLink="/profile" class="text-reset">Profile</a></li>
-                            <li class="breadcrumb-item active text-primary" aria-current="page">Projects</li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="col-lg-7 col-md-12 col-12">
-                    <h1 class="mb-3">Projects</h1>
-                    <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur amet congue libero. In finibus risus a finibus maximus.‍</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!--Blog single start-->
-    <div class="py-xl-9 py-4">
-        <div class="container">
-            <div class="row">
-                <article class="col-lg-8 offset-lg-2">
+                <div class="col-lg-8 offset-lg-2">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb fw-medium">
                             <li class="breadcrumb-item"><a routerLink="/profile" class="text-reset">Profile</a></li>
                             <li class="breadcrumb-item active text-primary" aria-current="page">Skills</li>
                         </ol>
                     </nav>
-                    <h1>Next Generation UI Design - Block Multipurpose theme</h1>
-                    <div class="d-flex align-items-center mt-lg-6 mt-4">
-                        <div class="me-5">
-                            <span class="fs-6">Written by</span>
-                            <div class="d-flex align-items-center mt-2">
-                                <img src="./assets/images/avatar/avatar-1.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
-                                <div class="ms-2">
-                                    <a href="#" class="text-reset fs-6">Sandip Chauhan</a>
-                                </div>
+
+                    <div class="py-5">
+                        <h1 class="mb-3">Technical Expertise</h1>
+                        <p>Explore my {{ skills.length }} documented technical skills listed below. Each skill is accompanied by its proficiency level and a general category. You can narrow down your search using the name or category filters if you're looking for anything specific.</p>    
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="mb-3">
+                                <label class="form-label" for="Skill Name Search">Name Search</label>
+                                <input class="form-control" type="search" id="search-input" [(ngModel)]="searchValue" (input)="onSearchChange()">
                             </div>
                         </div>
-                        <div>
-                            <span class="fs-6">Published on</span>
-                            <div class="mt-2 text-dark">
-                                <span class="fs-6">3 Oct, 2023</span>
-                            </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <label class="form-label" for="textInput">Category Search</label>
+                            <select class="form-select" aria-label="Skill Category Selection" [(ngModel)]="selectedCategory" (change)="onSelectCategory()">
+                                <option selected>All</option>
+                                <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+                            </select>
                         </div>
                     </div>
-
-                    <figure class="my-6">
-                        <img src="./assets/images/blog/blog-img-6.jpg" alt="blog" class="rounded-3 img-fluid w-100" />
-                    </figure>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia lorem non ullamcorper ornare. Sed mi mauris, porta non lectus sed, sollicitudin sagittis est.
-                        Aenean ac eros a magna porta facilisis semper sed eros.
-                    </p>
-                    <div class="mt-6">
-                        <h1>h1. heading</h1>
-                        <h2>h2. heading</h2>
-                        <h3>h3. heading</h3>
-                        <h4>h4. heading</h4>
-                        <h5>h5. heading</h5>
-                        <h6>h6. heading</h6>
+                    
+                    <div class="table-responsive">
+                        <table class="table skill-table">
+                            <thead>
+                                <tr>
+                                <th class="form-label" scope="col">Name</th>
+                                <th class="form-label" scope="col">Proficiency</th>
+                                <th class="form- hide-mobile" scope="col">Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <ng-container *ngFor="let skill of filteredSkills">
+                                    <tr>
+                                        <td>
+                                            <h4>{{ skill.name }}</h4>
+                                        </td>
+                                        <td>
+                                            <div class="proficiency">
+                                                <span *ngFor="let filled of getProficiencyLevels(skill.proficiency)" class="circle" [class.filled]="filled"></span>
+                                            </div>
+                                        </td>
+                                        <td class="hide-mobile">{{ skill.type }}</td>
+                                    </tr>
+                                </ng-container>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div class="mt-6">
-                        <h2>Paragraph</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia lorem non ullamcorper ornare. Sed mi mauris, porta non lectus sed, sollicitudin sagittis est.
-                            Aenean ac eros a magna porta facilisis semper sed eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                        <p>
-                            Donec lacinia lorem non ullamcorper ornare. Sed mi mauris, porta non lectus sed, sollicitudin sagittis est. Aenean ac eros a magna porta facilisis semper sed eros.
-                        </p>
-                        <p><strong>This line rendered as bold text.</strong></p>
-                        <p><em>This line rendered as italicized text.</em></p>
-                        <p><u>This line of text will render as underlined.</u></p>
-                    </div>
-
-                    <div class="mt-6">
-                        <h2>Unordered List</h2>
-                        <ul>
-                            <li>
-                                Implements This is an
-                                <a href="#!">external link</a>
-                            </li>
-                            <li>
-                                Implements This is an
-                                <a href="#!">inside link</a>
-                            </li>
-                            <li>An unordered list starts with the tag.</li>
-                            <li>Each list item starts with the tag.</li>
-                        </ul>
-                    </div>
-
-                    <div class="mt-6">
-                        <h2>Ordered Lists</h2>
-                        <ol>
-                            <li>An ordered list starts with the tag.</li>
-                            <li>Each list item starts with the tag.</li>
-                            <li>The HTML tag defines an ordered list.</li>
-                            <li>An ordered list can be numerical or alphabetical.</li>
-                        </ol>
-                    </div>
-
-                    <div class="mt-6">
-                        <h2>Blockquote</h2>
-                        <blockquote class="blockquote">A well-known quote, contained in a blockquote element.</blockquote>
-                    </div>
-
-                    <figure class="my-6">
-                        <img src="./assets/images/blog/blog-img-7.jpg" alt="blog" class="img-fluid rounded-3 w-100" />
-                    </figure>
-
-                    <p>
-                        Praesent in euismod dolor. Sed faucibus elit rutrum diam tempus, at varius dui tempor. In non rhoncus leo. Vestibulum sed vehicula tellus. Donec maximus velit eget
-                        libero congue, eu condimentum mauris efficitur.
-                    </p>
-                    <p>
-                        Quisque vel odio facilisis, eleifend massa et, tempus nisl. Vestibulum porta sapien in accumsan vulputate. In lectus massa, elementum in libero ut, tempor congue
-                        ligula.
-                    </p>
-                </article>
+                </div>
             </div>
         </div>
     </div>
-    <!--Blog single end-->
+
 </main>
