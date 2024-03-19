@@ -1,6 +1,7 @@
 <main>
+
     <div class="pattern-square"></div>
-    <!--Pageheader start-->
+
     <section class="py-5 py-lg-8">
         <div class="container">
             <div class="row">
@@ -19,75 +20,43 @@
             </div>
         </div>
     </section>
-    <!--Pageheader end-->
 
-    <!--Blog category start-->
     <section class="mb-xl-9">
         <div class="container">
             <div class="row gy-lg-7 gy-5">
-                <article class="col-lg-4 col-md-6 col-12">
-                    <figure class="mb-4 zoom-img">
-                        <a href="@@webRoot/blog-single.html">
-                            <img src="assets/images/misc/frontend-article.jpg" alt="blog" class="img-fluid rounded-3" loading="lazy" />
-                        </a>
-                    </figure>
-
-                    <a href="#!" class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">development</a>
-                    <h3 class="my-3 lh-base h4">
-                        <a href="./blog-single.html" class="text-reset">Frontend Explained</a>
-                    </h3>
-                    <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/misc/profile-picture.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
-                            <div class="ms-2">
-                                <a href="#" class="text-reset fs-6">George Gordon</a>
+                <ng-container *ngFor="let project of projects">
+                    <article class="col-lg-4 col-md-6 col-12">
+                        <figure class="mb-4 zoom-img">
+                            <a [routerLink]="project.route">
+                                <img [src]="project.image" alt="blog" class="img-fluid rounded-3" loading="lazy" />
+                            </a>
+                        </figure>
+                        <div class="mx-3">
+                            <ng-container *ngIf="project.category === 'Notes'">
+                                <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill text-uppercase">
+                                    {{ project.category }}
+                                </span>
+                            </ng-container>
+                            <ng-container *ngIf="project.category !== 'Notes'">
+                                <span class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">
+                                    {{ project.category }}
+                                </span>
+                            </ng-container>
+                            <h3 class="my-3 lh-base h4">
+                                <a [routerLink]="project.route" class="text-reset">{{ project.title }}</a>
+                            </h3>
+                            <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+                                <div class="d-flex align-items-center">
+                                    <img [src]="project.author.image" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+                                    <div class="ms-2">
+                                        <a href="#" class="text-reset fs-6">{{ project.author.name }}</a>
+                                    </div>
+                                </div>
+                                <div class="ms-3"><span class="fs-6">{{ project.dateCreated | date:'longDate' }}</span></div>
                             </div>
                         </div>
-                        <div class="ms-3"><span class="fs-6">Mar 16, 2024</span></div>
-                    </div>
-                </article>
-                <article class="col-lg-4 col-md-6 col-12">
-                    <figure class="mb-4 zoom-img">
-                        <a href="@@webRoot/blog-single.html">
-                            <img src="assets/images/misc/backend-article.jpg" alt="blog" class="img-fluid rounded-3" loading="lazy" />
-                        </a>
-                    </figure>
-
-                    <a href="#!" class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">development</a>
-                    <h3 class="my-3 lh-base h4">
-                        <a href="./blog-single.html" class="text-reset">Backend Explained</a>
-                    </h3>
-                    <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/misc/profile-picture.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
-                            <div class="ms-2">
-                                <a href="#" class="text-reset fs-6">George Gordon</a>
-                            </div>
-                        </div>
-                        <div class="ms-3"><span class="fs-6">Mar 16, 2024</span></div>
-                    </div>
-                </article>
-                <article class="col-lg-4 col-md-6 col-12">
-                    <figure class="mb-4 zoom-img">
-                        <a href="@@webRoot/blog-single.html">
-                            <img src="assets/images/misc/arch-article.jpg" alt="blog" class="img-fluid rounded-3" loading="lazy" />
-                        </a>
-                    </figure>
-
-                    <a href="#!" class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">development</a>
-                    <h3 class="my-3 lh-base h4">
-                        <a href="./blog-single.html" class="text-reset">Architecture Explained</a>
-                    </h3>
-                    <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/misc/profile-picture.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
-                            <div class="ms-2">
-                                <a href="#" class="text-reset fs-6">George Gordon</a>
-                            </div>
-                        </div>
-                        <div class="ms-3"><span class="fs-6">Mar 16, 2024</span></div>
-                    </div>
-                </article>
+                    </article>
+                </ng-container>
             </div>
         </div>
     </section>

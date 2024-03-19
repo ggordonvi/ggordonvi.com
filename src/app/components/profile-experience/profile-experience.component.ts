@@ -21,7 +21,6 @@ export class ProfileExperienceComponent implements OnInit {
     this.jobService.getJobData()
       .subscribe((data: Company[]) => {
         this.jobs = data;
-        console.log(this.jobs);
       });
   }
 

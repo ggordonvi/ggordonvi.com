@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "uid": "frontend-explained",
+        "title": "Frontend Explained",
+        "image": "assets/images/misc/frontend-article.jpg",
+        "route": "/profile/projects/frontend-explained",
+        "author": {
+            "name": "George Gordon",
+            "image": "assets/images/misc/profile-picture.jpg"
+        },
+        "dateCreated": "2024-03-16",
+        "dateModified": "",
+        "featured": true,
+        "category": "Development",
+        "tags": ["Angular", "Frontend", "Front-end"]
+    },
+    {
+        "id": 2,
+        "uid": "backend-explained",
+        "title": "Backend Explained",
+        "image": "assets/images/misc/backend-article.jpg",
+        "route": "/profile/projects/backend-explained",
+        "author": {
+            "name": "George Gordon",
+            "image": "assets/images/misc/profile-picture.jpg"
+        },
+        "dateCreated": "2024-03-16",
+        "dateModified": "",
+        "featured": true,
+        "category": "Development",
+        "tags": ["Java", "Springboot", "Spring Boot"]
+    },
+    {
+        "id": 3,
+        "uid": "architecture-explained",
+        "title": "Architecture Explained",
+        "image": "assets/images/misc/arch-article.jpg",
+        "route": "/profile/projects/architecture-explained",
+        "author": {
+            "name": "George Gordon",
+            "image": "assets/images/misc/profile-picture.jpg"
+        },
+        "dateCreated": "2024-03-16",
+        "dateModified": "",
+        "featured": true,
+        "category": "Development",
+        "tags": ["Amazon Web Services", "AWS"]
+    },
+    {
+        "id": 4,
+        "uid": "patch-notes",
+        "title": "Patch Notes",
+        "image": "assets/images/misc/patch-notes-article.jpg",
+        "route": "/profile/projects/patch-notes",
+        "author": {
+            "name": "George Gordon",
+            "image": "assets/images/misc/profile-picture.jpg"
+        },
+        "dateCreated": "2024-03-18",
+        "dateModified": "",
+        "featured": false,
+        "category": "Notes",
+        "tags": ["Amazon Web Services", "AWS"]
+    }
+]
