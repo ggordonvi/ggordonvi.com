@@ -21,7 +21,6 @@ export class ProfileProjectsComponent implements OnInit {
     this.projectService.getFeaturedProjects()
       .subscribe((data: Project[]) => {
         this.featuredProjects = data;
-        console.log(this.featuredProjects);
       });
   }
 

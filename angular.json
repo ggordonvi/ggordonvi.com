@@ -52,24 +52,29 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
               "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
               "./node_modules/swiper/swiper-bundle.min.css",
               "./node_modules/simplebar/dist/simplebar.min.css",
               "./node_modules/aos/dist/aos.css",
-              "src/assets/fonts/css/boxicons.css",
-              "src/assets/css/theme.css"
+              "src/styles.scss",
+              "src/assets/fonts/css/boxicons.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/js/vendors/color-modes.js",
+              "./node_modules/aos/dist/aos.js",
               "./node_modules/simplebar/dist/simplebar.min.js",
               "./node_modules/headhesive/dist/headhesive.min.js",
-              "src/assets/js/main.js",
-              "src/assets/js/vendors/offcanvas.js",
               "./node_modules/swiper/swiper-bundle.min.js",
-              "src/assets/js/vendors/swiper.js",
-              "./node_modules/aos/dist/aos.js"
+              "src/assets/js/main.js",
+              "src/assets/js/vendors/cleave-function.js",
+              "src/assets/js/vendors/color-modes.js",
+              "src/assets/js/vendors/offcanvas.js",
+              "src/assets/js/vendors/parallax.js",
+              "src/assets/js/vendors/password.js",
+              "src/assets/js/vendors/pricing.js",
+              "src/assets/js/vendors/sidebar-menu.js",
+              "src/assets/js/vendors/sidenav.js",
+              "src/assets/js/vendors/swiper.js"
             ]
           },
           "configurations": {

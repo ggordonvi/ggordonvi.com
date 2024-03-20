@@ -14,14 +14,13 @@ export class ProjectsComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
   
   ngOnInit(): void {
-    this.getProjectData();
+    this.getProjects();
   }
 
-  getProjectData(): void {
-    this.projectService.getProjectData()
+  getProjects(): void {
+    this.projectService.getProjects()
       .subscribe((data: Project[]) => {
         this.projects = data;
-        console.log(this.projects);
       });
   }
 

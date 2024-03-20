@@ -17,14 +17,14 @@ import { ProfileProjectsComponent } from './components/profile-projects/profile-
 
 import { ProjectsComponent } from './pages/projects/projects.component';
 
-import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FrontendExplainedComponent } from './pages/projects/pages/frontend-explained/frontend-explained.component';
-import { BackendExplainedComponent } from './pages/projects/pages/backend-explained/backend-explained.component';
-import { PatchNotesComponent } from './pages/projects/pages/patch-notes/patch-notes.component';
-import { ArchitectureExplainedComponent } from './pages/projects/pages/architecture-explained/architecture-explained.component';
 import { ProjectHeaderComponent } from './components/project-header/project-header.component';
+import { ThemeSelectComponent } from './components/theme-select/theme-select.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectContentComponent } from './components/project-content/project-content.component';
+import { ProjectPageComponent } from './pages/projects/project-page/project-page.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +38,13 @@ import { ProjectHeaderComponent } from './components/project-header/project-head
     ProfileExperienceComponent,
     ProfileProjectsComponent,
     ProjectsComponent,
-    FooterComponent,
     SkillsComponent,
-    FrontendExplainedComponent,
-    BackendExplainedComponent,
-    PatchNotesComponent,
-    ArchitectureExplainedComponent,
-    ProjectHeaderComponent
+    ProjectHeaderComponent,
+    ThemeSelectComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProjectContentComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,

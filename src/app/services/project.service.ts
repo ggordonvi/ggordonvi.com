@@ -18,15 +18,21 @@ export class ProjectService {
     return this.http.get<Project[]>(this.projectJsonData);
   }
 
+  getProjects(): Observable<Project[]> {
+    return this.getProjectData().pipe(
+      map(projects => projects.filter(project => project.enabled))
+    );
+  }
+
   getProjectByUid(uid: string): Observable<Project | undefined> {
     return this.getProjectData().pipe(
-      map(projects => projects.find(project => project.uid === uid))
+      map(projects => projects.find(project => project.uid === uid && project.enabled))
     );
   }
 
   getFeaturedProjects(): Observable<Project[]> {
     return this.getProjectData().pipe(
-      map(projects => projects.filter(project => project.featured))
+      map(projects => projects.filter(project => project.featured && project.enabled))
     );
   }
   
