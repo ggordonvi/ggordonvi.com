@@ -1,4 +1,5 @@
 import { Author } from "./author";
+import { Content } from "./content";
 
 export interface Project {
   id: number;
@@ -10,6 +11,8 @@ export interface Project {
   dateCreated: Date | null;
   dateModified: Date | null;
   featured: boolean;
+  enabled: boolean;
   category: string;
   tags: string[];
+  content: Content;
 }

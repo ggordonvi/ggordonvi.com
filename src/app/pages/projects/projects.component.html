@@ -1,8 +1,6 @@
 <main>
 
-    <div class="pattern-square"></div>
-
-    <section class="py-5 py-lg-8">
+    <section class="pt-3 pb-5 pb-lg-8">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -27,7 +25,7 @@
                 <ng-container *ngFor="let project of projects">
                     <article class="col-lg-4 col-md-6 col-12">
                         <figure class="mb-4 zoom-img">
-                            <a [routerLink]="project.route">
+                            <a [routerLink]="['/profile/projects', project.uid]">
                                 <img [src]="project.image" alt="blog" class="img-fluid rounded-3" loading="lazy" />
                             </a>
                         </figure>
@@ -43,7 +41,7 @@
                                 </span>
                             </ng-container>
                             <h3 class="my-3 lh-base h4">
-                                <a [routerLink]="project.route" class="text-reset">{{ project.title }}</a>
+                                <a [routerLink]="['/profile/projects', project.uid]" class="text-reset">{{ project.title }}</a>
                             </h3>
                             <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
                                 <div class="d-flex align-items-center">
@@ -60,5 +58,5 @@
             </div>
         </div>
     </section>
-    <!--Blog category end-->
+
 </main>

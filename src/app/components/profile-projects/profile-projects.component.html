@@ -20,7 +20,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div>
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a [routerLink]="project.route">
+                                <a [routerLink]="['/profile/projects', project.uid]">
                                     <img [src]="project.image"
                                         alt="portfolio-2"
                                         class="img-fluid rounded-3" />
@@ -32,7 +32,7 @@
                             </figure>
     
                             <h2 class="lh-base h4 text-center">
-                                <a [routerLink]="project.route" class="text-reset">{{ project.title }}</a>
+                                <a [routerLink]="['/profile/projects', project.uid]" class="text-reset">{{ project.title }}</a>
                             </h2>
                             <p class="mb-0 text-body-tertiary fw-medium text-center">{{ project.category }}</p>
                         </div>

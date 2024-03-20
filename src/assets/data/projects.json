@@ -1,66 +1,161 @@
 [
-    {
-        "id": 1,
-        "uid": "frontend-explained",
-        "title": "Frontend Explained",
-        "image": "assets/images/misc/frontend-article.jpg",
-        "route": "/profile/projects/frontend-explained",
-        "author": {
-            "name": "George Gordon",
-            "image": "assets/images/misc/profile-picture.jpg"
-        },
-        "dateCreated": "2024-03-16",
-        "dateModified": "",
-        "featured": true,
-        "category": "Development",
-        "tags": ["Angular", "Frontend", "Front-end"]
+  {
+    "id": 0,
+    "uid": "",
+    "title": "",
+    "image": "",
+    "author": {
+      "name": "George Gordon",
+      "image": "assets/images/misc/profile-picture.jpg"
     },
-    {
-        "id": 2,
-        "uid": "backend-explained",
-        "title": "Backend Explained",
-        "image": "assets/images/misc/backend-article.jpg",
-        "route": "/profile/projects/backend-explained",
-        "author": {
-            "name": "George Gordon",
-            "image": "assets/images/misc/profile-picture.jpg"
-        },
-        "dateCreated": "2024-03-16",
-        "dateModified": "",
-        "featured": true,
-        "category": "Development",
-        "tags": ["Java", "Springboot", "Spring Boot"]
-    },
-    {
-        "id": 3,
-        "uid": "architecture-explained",
-        "title": "Architecture Explained",
-        "image": "assets/images/misc/arch-article.jpg",
-        "route": "/profile/projects/architecture-explained",
-        "author": {
-            "name": "George Gordon",
-            "image": "assets/images/misc/profile-picture.jpg"
-        },
-        "dateCreated": "2024-03-16",
-        "dateModified": "",
-        "featured": true,
-        "category": "Development",
-        "tags": ["Amazon Web Services", "AWS"]
-    },
-    {
-        "id": 4,
-        "uid": "patch-notes",
-        "title": "Patch Notes",
-        "image": "assets/images/misc/patch-notes-article.jpg",
-        "route": "/profile/projects/patch-notes",
-        "author": {
-            "name": "George Gordon",
-            "image": "assets/images/misc/profile-picture.jpg"
-        },
-        "dateCreated": "2024-03-18",
-        "dateModified": "",
-        "featured": false,
-        "category": "Notes",
-        "tags": ["Amazon Web Services", "AWS"]
+    "dateCreated": "2024-03-18",
+    "dateModified": "2024-03-19",
+    "featured": false,
+    "enabled": false,
+    "category": "",
+    "tags": ["", ""],
+    "content": {
+      "sections": [
+        {
+          "title": "",
+          "body": "",
+          "lists": [
+            {
+              "type": "",
+              "title": "",
+              "description": "",
+              "items": [
+                "",
+                ""
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "",
+              "alt": ""
+            }
+          ],
+          "quotes": [
+            {
+              "author": "",
+              "quote": ""
+            }
+          ]
+        }
+      ]
     }
+  },  
+  {
+    "id": 1,
+    "uid": "frontend-explained",
+    "title": "Frontend Explained",
+    "image": "assets/images/misc/frontend-article.jpg",
+    "author": {
+        "name": "George Gordon",
+        "image": "assets/images/misc/profile-picture.jpg"
+    },
+    "dateCreated": "2024-03-16",
+    "dateModified": "2024-03-19",
+    "featured": true,
+    "enabled": true,
+    "category": "Development",
+    "tags": ["Angular", "Frontend", "Front-end"]
+  },
+  {
+    "id": 2,
+    "uid": "backend-explained",
+    "title": "Backend Explained",
+    "image": "assets/images/misc/backend-article.jpg",
+    "author": {
+        "name": "George Gordon",
+        "image": "assets/images/misc/profile-picture.jpg"
+    },
+    "dateCreated": "2024-03-16",
+    "dateModified": "2024-03-19",
+    "featured": true,
+    "enabled": true,
+    "category": "Development",
+    "tags": ["Java", "Springboot", "Spring Boot"]
+  },
+  {
+    "id": 3,
+    "uid": "architecture-explained",
+    "title": "Architecture Explained",
+    "image": "assets/images/misc/arch-article.jpg",
+    "author": {
+        "name": "George Gordon",
+        "image": "assets/images/misc/profile-picture.jpg"
+    },
+    "dateCreated": "2024-03-16",
+    "dateModified": "2024-03-19",
+    "featured": true,
+    "enabled": true,
+    "category": "Development",
+    "tags": ["Amazon Web Services", "AWS"]
+  },
+  {
+    "id": 4,
+    "uid": "release-notes",
+    "title": "Release Notes",
+    "image": "assets/images/misc/patch-notes-article.jpg",
+    "author": {
+        "name": "George Gordon",
+        "image": "assets/images/misc/profile-picture.jpg"
+    },
+    "dateCreated": "2024-03-18",
+    "dateModified": "2024-03-19",
+    "featured": false,
+    "enabled": true,
+    "category": "Notes",
+    "tags": ["Amazon Web Services", "AWS"],
+    "content": {
+      "sections": [
+        {
+          "title": "",
+          "body": "",
+          "lists": [
+            {
+              "type": "unordered",
+              "title": "1.0.3",
+              "description": "March 18, 2024",
+              "items": [
+                "Project page build out - modules, service, data.",
+                "Continued focus on externalizing data in preperation for API integration."
+              ]
+            },
+            {
+              "type": "unordered",
+              "title": "1.0.2",
+              "description": "March 15, 2024",
+              "items": [
+                "Begin on Project page structuring.",
+                "Heavy focus on externalizing data in JSONs in preperation for API integration.",
+                "Profile page finalization and cleanup."
+              ]
+            },
+            {
+              "type": "unordered",
+              "title": "1.0.1",
+              "description": "March 14, 2024",
+              "items": [
+                "Cleanup and styling adjustments.",
+                "Switched hosting method from a standard S3 bucket with Cloud Formation to AWS Amplify",
+                "Continuing to define templates, them structure and pathing."
+              ]
+            },
+            {
+              "type": "unordered",
+              "title": "1.0.0",
+              "description": "January 29, 2024",
+              "items": [
+                "Defining templates, theme and stucture.",
+                "Inital code base structure and creation."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
 ]
