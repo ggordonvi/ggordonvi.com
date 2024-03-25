@@ -1,4 +1,4 @@
-<section *ngIf="project" class="pt-3 pb-5 pb-lg-8">
+<section *ngIf="project" class="pt-3 pb-5 pb-lg-6">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -12,7 +12,39 @@
             </div>
             <div class="col-lg-12">
                 <h1>{{ project.title }}</h1>
-                <div class="d-flex align-items-center mt-lg-6 mt-4">
+            </div>
+
+            <ng-container *ngIf="project.description">
+                <div class="col-sm-12 col-md-8">
+                    <p class="mb-0 lead">{{ project.description }}</p>
+                </div>
+            </ng-container>
+
+            <div class="row mt-3">
+                <div class="col-12 col-md-3 mb-3">
+                    <span class="fs-6">Written by</span>
+                    <div class="d-flex align-items-center mt-2">
+                        <img [src]="project.author.image" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+                        <div class="ms-2">
+                            <span class="text-reset fs-6">{{ project.author.name }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <span class="fs-6">Published on</span>
+                    <div class="mt-2 text-dark">
+                        <span class="fs-6">{{ project.dateCreated | date:'longDate'}}</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <span class="fs-6">Last Modified on</span>
+                    <div class="mt-2 text-dark">
+                        <span class="fs-6">{{ project.dateCreated | date:'longDate'}}</span>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- <div class="d-flex align-items-center mt-lg-6 mt-4">
                     <div class="me-6">
                         <span class="fs-6">Written by</span>
                         <div class="d-flex align-items-center mt-2">
@@ -25,11 +57,10 @@
                     <div>
                         <span class="fs-6">Published on</span>
                         <div class="mt-2 text-dark">
-                            <span class="fs-6">{{ project.dateCreated }}</span>
+                            <span class="fs-6">{{ project.dateCreated | date:'longDate'}}</span>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> -->
         </div>
     </div>
 </section>
