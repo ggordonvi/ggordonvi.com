@@ -1,74 +1,70 @@
 <section *ngIf="project && project.content">
-    <div class="container">
-        <div class="row">
+    <div class="row">
+        <ng-container *ngFor="let section of project.content.sections">
 
-            <ng-container *ngFor="let section of project.content.sections">
-                <ng-container *ngIf="section.title">
-                    <h3>{{ section.title }}</h3>
-                </ng-container>
-                <ng-container *ngIf="section.body">
-                    <p style="white-space: pre-line;">{{ section.body }}</p>
-                </ng-container>
+            <ng-container *ngIf="section.title">
+                <h3>{{ section.title }}</h3>
+            </ng-container>
+            <ng-container *ngIf="section.body">
+                <p style="white-space: pre-line;">{{ section.body }}</p>
+            </ng-container>
 
-                <ng-container *ngIf="section.lists && section.lists.length">
-                    <ng-container *ngFor="let list of section.lists">
-                        <ng-container *ngIf="list.type === 'unordered'">
-                            <div class="py-3">
-                                <ng-container *ngIf="list.title">
-                                    <h3>{{ list.title }}</h3>
-                                </ng-container>
-                                <ng-container *ngIf="list.description">
-                                    <p>{{ list.description }}</p>
-                                </ng-container>
-                                <ul>
-                                    <ng-container *ngFor="let item of list.items">
-                                        <li>{{ item }}</li>
-                                    </ng-container>
-                                </ul>  
-                            </div>  
-                        </ng-container>
-                        <ng-container *ngIf="list.type === 'ordered'">
-                            <div class="py-3">
-                                <ng-container *ngIf="list.title">
-                                    <h3>{{ list.title }}</h3>
-                                </ng-container>
-                                <ng-container *ngIf="list.description">
-                                    <p>{{ list.description }}</p>
-                                </ng-container>
-                                <ol>
-                                    <ng-container *ngFor="let item of list.items">
-                                        <li>{{ item }}</li>
-                                    </ng-container>
-                                </ol>  
-                            </div>
-                        </ng-container>
-                    </ng-container>
-                </ng-container>
-
-                <ng-container *ngIf="section.images && section.images.length">
-                    <div class="col-12 col-lg-8 offset-lg-2 py-3">
-                        <swiper [config]="config">
-                            <ng-container *ngFor="let image of section.images">
-                                <ng-template swiperSlide>
-                                    <img [src]="image.src" [alt]="image.alt" class="img-fluid rounded-3" />
-                                </ng-template>
+            <ng-container *ngIf="section.lists && section.lists.length">
+                <ng-container *ngFor="let list of section.lists">
+                    <ng-container *ngIf="list.type === 'unordered'">
+                        <div class="py-3">
+                            <ng-container *ngIf="list.title">
+                                <h3>{{ list.title }}</h3>
                             </ng-container>
-                        </swiper>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </ng-container>
-
-                <ng-container *ngIf="section.quotes && section.quotes.length">
-                    <ng-container *ngFor="let quote of section.quotes">
-                        <div class="mt-6">
-                            <blockquote class="blockquote">{{ quote.quote }}</blockquote>
+                            <ng-container *ngIf="list.description">
+                                <p>{{ list.description }}</p>
+                            </ng-container>
+                            <ul>
+                                <ng-container *ngFor="let item of list.items">
+                                    <li>{{ item }}</li>
+                                </ng-container>
+                            </ul>  
+                        </div>  
+                    </ng-container>
+                    <ng-container *ngIf="list.type === 'ordered'">
+                        <div class="py-3">
+                            <ng-container *ngIf="list.title">
+                                <h3>{{ list.title }}</h3>
+                            </ng-container>
+                            <ng-container *ngIf="list.description">
+                                <p>{{ list.description }}</p>
+                            </ng-container>
+                            <ol>
+                                <ng-container *ngFor="let item of list.items">
+                                    <li>{{ item }}</li>
+                                </ng-container>
+                            </ol>  
                         </div>
                     </ng-container>
                 </ng-container>
-
             </ng-container>
 
+            <ng-container *ngIf="section.images && section.images.length">
+                <div class="col-12 py-3">
+                    <swiper [config]="config">
+                        <ng-container *ngFor="let image of section.images">
+                            <ng-template swiperSlide>
+                                <img [src]="image.src" [alt]="image.alt" class="img-fluid rounded-3" />
+                            </ng-template>
+                        </ng-container>
+                    </swiper>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </ng-container>
 
-        </div>
+            <ng-container *ngIf="section.quotes && section.quotes.length">
+                <ng-container *ngFor="let quote of section.quotes">
+                    <div class="mt-6">
+                        <blockquote class="blockquote">{{ quote.quote }}</blockquote>
+                    </div>
+                </ng-container>
+            </ng-container>
+
+        </ng-container>
     </div>
 </section>
