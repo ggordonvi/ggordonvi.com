@@ -1,12 +1,12 @@
 <section *ngIf="project && project.content">
-    <div class="container">
-
+    <div class="row">
         <ng-container *ngFor="let section of project.content.sections">
+
             <ng-container *ngIf="section.title">
-                <h2>{{ section.title }}</h2>
+                <h3>{{ section.title }}</h3>
             </ng-container>
             <ng-container *ngIf="section.body">
-                <p>{{ section.body }}</p>
+                <p style="white-space: pre-line;">{{ section.body }}</p>
             </ng-container>
 
             <ng-container *ngIf="section.lists && section.lists.length">
@@ -45,11 +45,16 @@
             </ng-container>
 
             <ng-container *ngIf="section.images && section.images.length">
-                <ng-container *ngFor="let image of section.images">
-                    <figure class="my-6">
-                        <img [src]="image.src" [alt]="image.alt" class="rounded-3 img-fluid w-100" />
-                    </figure>
-                </ng-container>
+                <div class="col-12 py-3">
+                    <swiper [config]="config">
+                        <ng-container *ngFor="let image of section.images">
+                            <ng-template swiperSlide>
+                                <img [src]="image.src" [alt]="image.alt" class="img-fluid rounded-3" />
+                            </ng-template>
+                        </ng-container>
+                    </swiper>
+                    <div class="swiper-pagination"></div>
+                </div>
             </ng-container>
 
             <ng-container *ngIf="section.quotes && section.quotes.length">
@@ -61,6 +66,5 @@
             </ng-container>
 
         </ng-container>
-
     </div>
 </section>

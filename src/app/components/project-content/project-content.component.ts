@@ -1,6 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Project } from 'src/app/models/project';
 
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions } from 'swiper';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
 @Component({
   selector: 'app-project-content',
   templateUrl: './project-content.component.html',
@@ -14,5 +18,17 @@ export class ProjectContentComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
+  config: SwiperOptions = {
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+  };
 
 }

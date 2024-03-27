@@ -26,6 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectContentComponent } from './components/project-content/project-content.component';
 import { ProjectPageComponent } from './pages/projects/project-page/project-page.component';
 
+import { SwiperModule } from 'swiper/angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,8 @@ import { ProjectPageComponent } from './pages/projects/project-page/project-page
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

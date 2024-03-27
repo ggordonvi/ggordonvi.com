@@ -3,6 +3,7 @@
     "id": 0,
     "uid": "",
     "title": "",
+    "description": "",
     "image": "",
     "author": {
       "name": "George Gordon",
@@ -45,59 +46,12 @@
         }
       ]
     }
-  },  
-  {
-    "id": 1,
-    "uid": "frontend-explained",
-    "title": "Frontend Explained",
-    "image": "assets/images/misc/frontend-article.jpg",
-    "author": {
-        "name": "George Gordon",
-        "image": "assets/images/misc/profile-picture.jpg"
-    },
-    "dateCreated": "2024-03-16",
-    "dateModified": "2024-03-19",
-    "featured": true,
-    "enabled": true,
-    "category": "Development",
-    "tags": ["Angular", "Frontend", "Front-end"]
-  },
-  {
-    "id": 2,
-    "uid": "backend-explained",
-    "title": "Backend Explained",
-    "image": "assets/images/misc/backend-article.jpg",
-    "author": {
-        "name": "George Gordon",
-        "image": "assets/images/misc/profile-picture.jpg"
-    },
-    "dateCreated": "2024-03-16",
-    "dateModified": "2024-03-19",
-    "featured": true,
-    "enabled": true,
-    "category": "Development",
-    "tags": ["Java", "Springboot", "Spring Boot"]
-  },
-  {
-    "id": 3,
-    "uid": "architecture-explained",
-    "title": "Architecture Explained",
-    "image": "assets/images/misc/arch-article.jpg",
-    "author": {
-        "name": "George Gordon",
-        "image": "assets/images/misc/profile-picture.jpg"
-    },
-    "dateCreated": "2024-03-16",
-    "dateModified": "2024-03-19",
-    "featured": true,
-    "enabled": true,
-    "category": "Development",
-    "tags": ["Amazon Web Services", "AWS"]
   },
   {
     "id": 4,
     "uid": "release-notes",
     "title": "Release Notes",
+    "description": "",
     "image": "assets/images/misc/patch-notes-article.jpg",
     "author": {
         "name": "George Gordon",
@@ -105,53 +59,147 @@
     },
     "dateCreated": "2024-03-18",
     "dateModified": "2024-03-19",
-    "featured": false,
+    "featured": true,
     "enabled": true,
     "category": "Notes",
     "tags": ["Amazon Web Services", "AWS"],
     "content": {
       "sections": [
         {
-          "title": "",
-          "body": "",
+          "title": "About",
+          "body": "Welcome to our Release Notes page! Here, you'll find detailed information about the latest updates and improvements to ggordonvi.com. Each major release will highlight features and enhancments that are introduced.",
           "lists": [
             {
               "type": "unordered",
-              "title": "1.0.3",
-              "description": "March 18, 2024",
-              "items": [
-                "Project page build out - modules, service, data.",
-                "Continued focus on externalizing data in preperation for API integration."
-              ]
-            },
-            {
-              "type": "unordered",
-              "title": "1.0.2",
-              "description": "March 15, 2024",
-              "items": [
-                "Begin on Project page structuring.",
-                "Heavy focus on externalizing data in JSONs in preperation for API integration.",
-                "Profile page finalization and cleanup."
-              ]
-            },
-            {
-              "type": "unordered",
               "title": "1.0.1",
-              "description": "March 14, 2024",
+              "description": "TBD",
               "items": [
-                "Cleanup and styling adjustments.",
-                "Switched hosting method from a standard S3 bucket with Cloud Formation to AWS Amplify",
-                "Continuing to define templates, them structure and pathing."
+                "Implement login and sign-up workflows utilizing the Amplify Auth API.",
+                "Develop an account page enabling users to manage personal profile details.",
+                "Utilize the account page to facilitate management of back-of-house data.",
+                "Design a fluid UI enabling seamless CRUD operations for efficient data management on the site."
               ]
             },
             {
               "type": "unordered",
               "title": "1.0.0",
-              "description": "January 29, 2024",
+              "description": "March 6, 2024",
               "items": [
-                "Defining templates, theme and stucture.",
-                "Inital code base structure and creation."
+                "Finalized base template, theme, and design.",
+                "Developed SPA frontend using Angular v16.2.0.",
+                "Crafted a comprehensive profile page serving as a resume, detailing skills, professional experience, and project highlights.",
+                "Created a skill page to showcase a diverse range of skills, categorized by proficiency and expertise.",
+                "Structured the projects page to serve as a dynamic blog or coding playground, featuring project showcases and demonstrations.",
+                "Implemented header with a theme selection option for seamless toggling between light and dark modes.",
+                "Designed footer with links to social media profiles for easy access.",
+                "Utilized JSON files to externalize data, dynamically rendering content through services in preparation for future API or backend integrations."
               ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "uid": "jill-sells-the-carolinas",
+    "title": "Jill Sells the Carolinas",
+    "description": "Angular / Node Web Application",
+    "image": "assets/images/projects/jillsellsthecarolinas/card.png",
+    "author": {
+      "name": "George Gordon",
+      "image": "assets/images/misc/profile-picture.jpg"
+    },
+    "dateCreated": "2024-03-23",
+    "dateModified": "2024-03-23",
+    "featured": true,
+    "enabled": true,
+    "category": "Development",
+    "tags": ["Website", "Development"],
+    "content": {
+      "sections": [
+        {
+          "title": "About",
+          "body": "This web application was designed not only to establish the real estate agent's credibility but also to provide vital contact information and showcase compelling testimonials. A key highlight of the application was its ability to dynamically display local property listings, seamlessly pulled from a listings API and elegantly presented on an interactive map. To engage potential clients effectively, the platform featured contact forms equipped with advanced validation mechanisms using Nodemailer and AWS-SDK. Additionally, the integration of Google reCaptcha ensured enhanced security and protection against spam submissions, further bolstering the platform's reliability and user trust.\n\nIn addition to its user-centric features, the web application prioritized search engine visibility and performance tracking. Rigorous SEO optimization measures were implemented to enhance the platform's discoverability, while seamless integration with Google Analytics provided comprehensive insights into user behavior and engagement metrics. Hosting infrastructure was meticulously orchestrated using AWS ElasticBeanstalk and AWS SES, guaranteeing unparalleled reliability, scalability, and security.",
+          "lists": [
+            {
+              "type": "unordered",
+              "title": "Features",
+              "description": "",
+              "items": [
+                "Angular 7, Node.js, Bootstrap.",
+                "Local property listings pulled from listings API.",
+                "Contact forms to retrieve potential client information made with Nodemailer and AWS-SDK.",
+                "Contact form validation includes Google reCaptcha.",
+                "SEO optimization and Google Analytics.",
+                "AWS ElasticBeanstalk and AWS SES hosting."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/projects/jillsellsthecarolinas/desktop1.png",
+              "alt": ""
+            },
+            {
+              "src": "assets/images/projects/jillsellsthecarolinas/desktop2.png",
+              "alt": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "uid": "seating-app",
+    "title": "Seating App",
+    "description": "MEAN Stack Web Application",
+    "image": "assets/images/projects/seatingapp/card.png",
+    "author": {
+      "name": "George Gordon",
+      "image": "assets/images/misc/profile-picture.jpg"
+    },
+    "dateCreated": "2024-03-23",
+    "dateModified": "2024-03-23",
+    "featured": true,
+    "enabled": true,
+    "category": "Development",
+    "tags": ["Website", "Development"],
+    "content": {
+      "sections": [
+        {
+          "title": "About",
+          "body": "The Seating App is a sophisticated web application crafted as a capstone project by a team of aspiring professionals from the University of South Carolina. At its core, this application serves as a comprehensive restaurant seating reservation manager, offering a seamless experience for designing custom floor plans and managing reservations. \n\nUtilizing a tech stack comprising Angular 7, Node.js, Express, and Mongoose, the app ensures robust functionality and performance. Security is paramount, with features like password hashing and session tokens safeguarding user data. One of the standout features of the Seating App is its interactive floorplans, powered by the Fabric.js framework, enabling users to visualize and manipulate seating arrangements effortlessly. \n\nLastly, leveraging AWS Elastic Beanstalk and MongoDB hosting, the application ensures scalability and reliability, offering a seamless experience for both users and administrators alike. In summary, the Seating App represents a culmination of technical expertise and innovative design, poised to revolutionize restaurant management through its intuitive interface and robust feature set.",
+          "lists": [
+            {
+              "type": "unordered",
+              "title": "Features",
+              "description": "",
+              "items": [
+                "Angular 7, Node.js, Express, Mongoose.",
+                "Password hashing and session tokens.",
+                "Fluid UI reactions to user selection.",
+                "RESTful API and CRUD database operations.",
+                "Jasmine and Karma unit testing.",
+                "Selenium behavioral testing.",
+                "Interactive floorplans built with Fabric.js framework.",
+                "AWS Elastic Beanstalk and MongoDB hosting."
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/projects/seatingapp/desktop1.png",
+              "alt": ""
+            },
+            {
+              "src": "assets/images/projects/seatingapp/desktop2.png",
+              "alt": ""
+            },
+            {
+              "src": "assets/images/projects/seatingapp/desktop3.png",
+              "alt": ""
             }
           ]
         }

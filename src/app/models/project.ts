@@ -5,6 +5,7 @@ export interface Project {
   id: number;
   uid: string;
   title: string;
+  description: string;
   image: string;
   route: string;
   author: Author;
